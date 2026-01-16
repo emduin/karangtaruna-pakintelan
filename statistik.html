@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Statistik Organisasi - Karang Taruna Desa Pakintelan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="container nav-flex">
+            <div class="logo">IRAS<span>Pakintelan</span></div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="statistik.html" class="active">Statistik Organisasi</a></li>
+                <li><a href="berita.html">Berita Kegiatan</a></li>
+                <li><a href="galeri.html">Galeri Kegiatan</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><button onclick="logout()" class="btn-logout">Logout</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container public-section">
+        <h2 style="text-align: center; margin: 40px 0; color: var(--dark);">📊 Statistik Organisasi</h2>
+
+        <div class="stats-cards">
+            <div class="card">
+                <small>Anggota Terdaftar</small>
+                <h2>74 Orang</h2>
+            </div>
+            <div class="card">
+                <small>Kegiatan Bulan Ini</small>
+                <h2>4 Event</h2>
+            </div>
+            <div class="card">
+                <small>Saldo Kas</small>
+                <h2 class="text-green">Rp 3.250.000</h2>
+            </div>
+        </div>
+
+        <div class="chart-dummy" style="height:300px; background:#f8f9fa; margin-top:40px; display:flex; align-items:center; justify-content:center; border-radius:10px; border:2px dashed #ddd;">
+            <div style="text-align: center;">
+                <h3 style="color: #666; margin-bottom: 10px;">📈 Grafik Pertumbuhan Anggota</h3>
+                <p style="color: #999;">Grafik interaktif akan ditampilkan di sini</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 40px; text-align: center;">
+            <a href="index.html" class="btn-primary" style="margin-right: 10px;">← Kembali ke Home</a>
+            <a href="berita.html" class="btn-secondary">Berita Kegiatan →</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

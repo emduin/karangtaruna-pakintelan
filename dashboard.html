@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Admin - Karta</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        if (sessionStorage.getItem('isAuth') !== 'true') window.location.href = 'login.html';
+        if (sessionStorage.getItem('userRole') !== 'admin') window.location.href = 'index.html';
+    </script>
+</head>
+<body class="admin-body">
+    <aside class="sidebar">
+        <h3>Admin Panel</h3>
+        <nav class="side-menu">
+    <a href="index.html">🏠 Lihat Web</a>
+    <a href="javascript:void(0)" onclick="gantiMenu('statistik')" class="active">📊 Statistik Organisasi</a>
+    <a href="javascript:void(0)" onclick="gantiMenu('anggota')">👥 Data Anggota</a>
+    <a href="javascript:void(0)" onclick="gantiMenu('kas')">💰 Kas Organisasi</a>
+    <a href="javascript:void(0)" onclick="gantiMenu('berita')">📰 Berita Kegiatan</a>
+    <a href="javascript:void(0)" onclick="gantiMenu('galeri')">📸 Galeri Kegiatan</a>
+</nav>
+    </aside>
+
+   <main class="admin-content">
+    <header class="admin-header">
+        <nav class="horizontal-menu">
+            <a href="javascript:void(0)" onclick="gantiMenu('statistik')" class="menu-item active">📊 Statistik Organisasi</a>
+            <a href="javascript:void(0)" onclick="gantiMenu('berita')" class="menu-item">📰 Berita Kegiatan</a>
+            <a href="javascript:void(0)" onclick="gantiMenu('galeri')" class="menu-item">📸 Galeri Kegiatan</a>
+        </nav>
+        <h2 id="page-title">Ringkasan Dashboard</h2>
+        <div class="user-badge">Halo, Administrator</div>
+    </header>
+
+    <div id="dynamic-content">
+        <!-- Content will be loaded by JavaScript -->
+    </div>
+</main>
+    <script src="script.js"></script>
+</body>
+</html>

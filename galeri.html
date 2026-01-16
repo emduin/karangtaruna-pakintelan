@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeri Kegiatan - Karang Taruna Desa Pakintelan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="container nav-flex">
+            <div class="logo">IRAS<span>Pakintelan</span></div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="statistik.html">Statistik Organisasi</a></li>
+                <li><a href="berita.html">Berita Kegiatan</a></li>
+                <li><a href="galeri.html" class="active">Galeri Kegiatan</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><button onclick="logout()" class="btn-logout">Logout</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container public-section">
+        <h2 style="text-align: center; margin: 40px 0; color: var(--dark);">📸 Galeri Kegiatan</h2>
+
+        <div id="public-gallery-container" class="photo-gallery">
+            <!-- Photos will be loaded here -->
+        </div>
+
+        <div style="margin-top: 40px; text-align: center;">
+            <a href="berita.html" class="btn-primary" style="margin-right: 10px;">← Berita Kegiatan</a>
+            <a href="index.html" class="btn-secondary">Kembali ke Home →</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        // Load gallery content when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            loadPublicGallery();
+        });
+    </script>
+</body>
+</html>

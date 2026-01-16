@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karang Taruna Desa Pakintelan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="nav-flex">
+                <div class="logo">
+                    <img src="c:\Users\FX507ZV4\Pictures\WhatsApp Image 2026-01-07 at 14.30.44.png" alt="Logo Karang Taruna Desa Pakintelan" style="height: 60px; width: auto;">
+                </div>
+                <ul class="menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="statistik.html">Statistik Organisasi</a></li>
+                    <li><a href="berita.html">Berita Kegiatan</a></li>
+                    <li><a href="galeri.html">Galeri Kegiatan</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><button onclick="logout()" class="btn-logout">Logout</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main style="text-align: center;">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-overlay">
+                <h3>Karang Taruna Desa Pakintelan</h3>
+                <h1>Selamat Datang</h1>
+                <p>Organisasi pemuda untuk pembangunan desa melalui kegiatan sosial dan budaya.</p>
+            </div>
+        </section>
+
+        <!-- Profil Section -->
+        <section id="profil" class="profil">
+            <div class="container">
+                <h2 style="text-align: center;">Profil Organisasi</h2>
+                <div class="profil-stats" style="text-align: center;">
+                    <div class="stat-item">
+                        <h3>Informasi Penting tentang Pakintelan:</h3>
+                        <p>Lokasi: Kecamatan Gunungpati, Kota Semarang, Jawa Tengah.
+Potensi & Keunikan:
+Wisata Durian: Terdapat kebun durian edukasi keluarga, salah satunya di RT 05 RW 03.
+Kerajinan: Kampung Winongsari (RW 2) terkenal dengan kerajinan bambu dan rotan.
+Tempat Nongkrong: Ada Kopi Joss di RT 05 RW 05 yang menawarkan menu beragam dengan harga terjangkau.
+Kampung Wisata: Ada upaya pengembangan menjadi kampung wisata berbasis sumber daya lokal.
+</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Pemerintahan & Fasilitas:</h3>
+                        <p>Memiliki website resmi dan akun media sosial untuk informasi publik.
+Terdapat sekolah dasar seperti SDN Pakintelan 01 dan SDN Pakintelan 02.</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Kegiatan Masyarakat:</h3>
+                        <p>Rutin melakukan kegiatan seperti Pemberantasan Jentik Nyamuk (PJN) dan pelayanan publik. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Content (Hidden for non-admin) -->
+        <div id="user-content" style="display: none;">
+            <section id="public-stats" class="public-stats" style="display: none;">
+                <div class="container">
+                    <h2>Statistik Organisasi</h2>
+                    <div class="stats-cards">
+                        <div class="card"><h3>154</h3><p>Anggota</p></div>
+                        <div class="card"><h3>4</h3><p>Kegiatan</p></div>
+                        <div class="card"><h3>Rp 3.2jt</h3><p>Kas</p></div>
+                    </div>
+                    <div class="chart-dummy" style="height:200px; background:#eee; margin-top:20px; display:flex; align-items:center; justify-content:center; border-radius:10px;">
+                        [ Grafik Pertumbuhan Anggota ]
+                    </div>
+                </div>
+            </section>
+
+            <section id="public-news" class="public-news" style="display: none;">
+                <div class="container">
+                    <h2>Berita Kegiatan</h2>
+                    <div id="public-news-container" class="news-container">
+                        <!-- News will be loaded here -->
+                    </div>
+                </div>
+            </section>
+
+            <section id="public-gallery" class="public-gallery" style="display: none;">
+                <div class="container">
+                    <h2>Galeri Kegiatan</h2>
+                    <div id="public-gallery-container" class="photo-gallery">
+                        <!-- Photos will be displayed here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Karang Taruna Desa Pakintelan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
